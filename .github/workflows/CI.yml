@@ -28,5 +28,5 @@ jobs:
       - name: Push image
 
         run: |
-            Docker login -u nate53 -p ${{secrets.REGISTRY_PASS}}
+            docker login -u nate53 -p ${{secrets.REGISTRY_PASS}}
             docker push nate53/portfolio
